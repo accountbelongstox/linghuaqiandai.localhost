@@ -2491,7 +2491,7 @@ function authcode_push($pdo,$config,$language,$username){
 	}
 	return true;	
 }
-function other_push($pdo,$config,$language,$username,$email_data,$openid_data){
+function other_push($pdo,$config,$language,$username,$email_data,$openid_data,$isDev){
 	$sql="select `id`,`email`,`openid` from ".$pdo->index_pre."user where `username`='".$username."' limit 0,1";
 	$r=$pdo->query($sql,2)->fetch(2);
 	if($r['id']==''){return false;}
@@ -2499,7 +2499,7 @@ function other_push($pdo,$config,$language,$username,$email_data,$openid_data){
 	switch($config['web']['other_push_mode']){
 		case 'email':
 			if($r['email']==''){$config['web']['other_push_mode']='openid';}else{
-				$state=other_push_email($pdo,$config,$language,$r['email'],$email_data);
+				$state=other_push_email($pdo,$config,$language,$r['email'],$email_data,$isDev);
 				break;					
 			}
 		case 'openid':
@@ -2507,15 +2507,18 @@ function other_push($pdo,$config,$language,$username,$email_data,$openid_data){
 				$openid_data=str_replace('{openid}',$r['openid'],$openid_data);
 				$state=notice_app($pdo,$config['web']['wid'],$openid_data);			
 			}elseif($r['email']!=''){
-				$state=other_push_email($pdo,$config,$language,$r['email'],$email_data);
+				$state=other_push_email($pdo,$config,$language,$r['email'],$email_data,$isDev);
 			}
 			break;	
 	}
 	return $state;
 }
 
-function other_push_email($pdo,$config,$language,$email,$data){
+function other_push_email($pdo,$config,$language,$email,$data,$isDev){
 	if(!is_email($email)){return false;}
+	if($isDev){
+		return true;
+	}
 	//if(email_frequency($pdo,$email)==false){exit("{'state':'fail','info':'".$language['sms_frequent']."'}");}
 	if(email($config,$language,$pdo,'cloud',$email,$data['title'],$data['content'])){
 		return true;
@@ -3007,7 +3010,7 @@ function push_order_agree_refund_info($pdo,$config,$language,$username,$title,$g
 	other_push($pdo,$config,$language,$username,$email_data,$notice);
 }
 
-function push_login_info($pdo,$config,$language,$username){
+function push_login_info($pdo,$config,$language,$username,$isDev){
 	$notice=array();
 	$notice=array();
 	$notice['touser']='{openid}';
@@ -3042,7 +3045,7 @@ function push_login_info($pdo,$config,$language,$username){
 	$email_data['content']='<table width=50% style="margin:auto;">'.$email_data['content'].'</table>';
 	
 	$notice=json_encode($notice);
-	other_push($pdo,$config,$language,$username,$email_data,$notice);
+	other_push($pdo,$config,$language,$username,$email_data,$notice,$isDev);
 }
 
 

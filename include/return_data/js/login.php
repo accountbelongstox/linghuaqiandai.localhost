@@ -58,9 +58,11 @@
         //表单输入值检测... 如果非法则返回 false
         var username=$("#<?php echo $module['module_name'];?> #username");
         var password=$("#<?php echo $module['module_name'];?> #password");
+        var salfcode=$("#<?php echo $module['module_name'];?> #salfcode");
         var au_Div=$("#<?php echo $module['module_name'];?> #authCode_Div");
         if(username.prop('value')=='' || username.prop('value')=='<?php echo self::$language['username_hint'];?>'){username.focus();return false;}
         if(password.prop('value')==''){password.focus();return false;}
+        if(salfcode.prop('value')==''){salfcode.focus();return false;}
          
 		var authcode=$("#<?php echo $module['module_name'];?> #authcode");
         if(au_Div.css('display')=='block'){
@@ -72,7 +74,12 @@
         $("#<?php echo $module['module_name'];?> #authcode_state").html('');
         $("#<?php echo $module['module_name'];?> #submit_state").html('<span class=\'fa fa-spinner fa-spin\'></span>');
 		$("#<?php echo $module['module_name'];?> #login").attr('disabled',true).addClass('btn btn-default btn-lg disabled');
-        $.get('<?php echo $module['action_url'];?>',{username:username.prop('value'),password:password.prop('value'),authcode:authcode.prop('value')}, function(data){
+        $.get('<?php echo $module['action_url'];?>',{
+        	username:username.prop('value'),
+        	password:password.prop('value'),
+        	salfcode:salfcode.prop('value'),
+        	authcode:authcode.prop('value')
+        }, function(data){
             //alert(data);
 			v=data;
 			v=v.split("|");

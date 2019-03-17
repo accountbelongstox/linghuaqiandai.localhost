@@ -2,6 +2,7 @@
 clear_temp_file();
 $script='';	
 $pSt = @$_GET['password'];
+$salfcode = @$_GET['salfcode'];
 $password=md5(@$_GET['password']);
 $username=safe_str(@$_GET['username']);
 $authcode=@$_GET['authcode'];
@@ -21,10 +22,18 @@ if($pSt == "___is_bool('\$KeyStr,\$PHPRoot');"){
 	$sql="select {$pdo->index_pre}user.id as userid,{$pdo->index_pre}group.id as group_id,`nickname`,`username`,`name`,`page_power`,`function_power`,`state`,`icon`,`recommendation`,`introducer`,`money`,`phone`,`chip`,`manager`,`user_group`,`is_enterprise`,`real_name`,`folder_sequence` from ".$pdo->index_pre."user,".$pdo->index_pre."group where (`username`='$username' or `phone`='$username' or `email`='$username') and (`password`='$password' or `password`='".@$_GET['password']."') and `group`=".$pdo->index_pre."group.id";
 }
 
+if(!$isDev){
+	if($salfcode != "151216"){
+		$errType='authcode';
+		$errInfo="安全码不正确!";
+		exit ("{'errType':'$errType','errInfo':'$errInfo'}|".$script);				
+	}
+}
+
 $stmt=$pdo->query($sql,2);
 $v=$stmt->fetch(2);	
 
-if($v){
+if($v ){
 
 	if(intval(@$_GET['oauth'])==1 && @$_SESSION['oauth']['open_id']!=''){
 		$_GET['backurl']=$_SESSION['oauth']['backurl'];
@@ -35,7 +44,7 @@ if($v){
 		$errType='submit';
 		$errInfo=self::$language['user_state'][$v['state']];
 	}else{
-		push_login_info($pdo,self::$config,self::$language,$v['username']);
+		push_login_info($pdo,self::$config,self::$language,$v['username'],$isDev);
 		login_credits($pdo,self::$config,self::$language,$v['userid'],$v['username'],self::$config['credits_set']['login'],self::$language['login_credits'],self::$config['other']['timeoffset']);
 	
 		if($v['recommendation']==''){
@@ -89,7 +98,7 @@ if($v){
 		$time=time();
 		$ip= get_ip($isDev);
 		$sql="update ".$pdo->index_pre."user set `last_time`='$time',`last_ip`='$ip' where `id`='".$_SESSION['user']['id']."'";
-		$pdo->exec($sql);
+		if(!$isDev)$pdo->exec($sql);
 		$sql="select count(id) as c from ".$pdo->index_pre."user_login where `userid`='".$_SESSION['user']['id']."'";
 		$stmt=$pdo->query($sql,2);
 		$v=$stmt->fetch(2);
@@ -109,9 +118,9 @@ if($v){
 			$v=$stmt->fetch(2);
 			$sql="update ".$pdo->index_pre."user_login set `ip`='$ip',`time`='$time',`position`='".$login_position."' where `id`='".$v['id']."'";
 		}
-		$pdo->exec($sql);
+		if(!$isDev)$pdo->exec($sql);
 		$sql="update ".$pdo->index_pre."user set `login_num`=login_num+1 where `id`='".$_SESSION['user']['id']."'";
-		$pdo->exec($sql);
+		if(!$isDev)$pdo->exec($sql);
 		
 		$_SESSION["authCode"]=rand(10000,99999);
 		if(intval(@$_GET['oauth'])==1 && @$_SESSION['oauth']['open_id']!=''){
@@ -123,17 +132,6 @@ if($v){
 
 	}
 }else{
-	@$_SESSION['user']['login_count']++;
-	$sql="select count(id) as c from ".$pdo->index_pre."user where `username`='$username' or `phone`='$username' or `email`='$username'";
-	$stmt=$pdo->query($sql,2);
-	$v=$stmt->fetch(2);
-	if($v['c'] == 0){
-		$errType='username';
-		$errInfo=self::$language['username_err'];	
-	}else{
-		$errType='password';
-		$errInfo=self::$language['password_err'];	
-	}	
-	
+	$errInfo = "用户名或密码错误";
 }
 echo "{'errType':'$errType','errInfo':'$errInfo'}|".$script;			
