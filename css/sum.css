@@ -1,0 +1,124 @@
+.sum_card {
+ background: #f5f5f5;
+ border-radius: 20px;
+ font-size: 14px;
+ text-align: center;
+ margin-bottom: 10px;
+ font-weight: bold;
+ position: relative;
+ display: block;
+ line-height: 22px;
+ text-shadow: 0 0 1px #DDD;
+ text-decoration: none;
+ -moz-box-shadow: inset 0 0 0 1px #FAFAFA;
+ background: -moz-linear-gradient(top,rgba(30,87,153,0.2) 0%,rgba(125,185,232,0) 100%);
+ background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(30,87,153,0.2)),color-stop(100%,rgba(125,185,232,0)));
+ background: -webkit-linear-gradient(top,rgba(30,87,153,0.2) 0%,rgba(125,185,232,0) 100%);
+ background: -o-linear-gradient(top,rgba(30,87,153,0.2) 0%,rgba(125,185,232,0) 100%);
+ background: -ms-linear-gradient(top,rgba(30,87,153,0.2) 0%,rgba(125,185,232,0) 100%);
+ background: linear-gradient(to bottom,rgba(30,87,153,0.2) 0%,rgba(125,185,232,0) 100%);
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#331e5799',endColorstr='#007db9e8',GradientType=0);
+ border: 1px solid #e3e3e3;
+ -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+ box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+}
+
+
+.sum_card .card_head {
+ color:#2fa4e7;
+}
+
+.sum_card {
+ margin-top: 10px;
+ width: 25%;
+ height: 21.42rem;
+ float: left;
+ margin-left: 70px;
+ color:#2fa4e7;
+ margin-right: -30px;
+ padding: 10px;
+}
+.sum_card .card_head {
+ display:block;
+}
+.sum_card .card_head:hover {
+ opacity:0.9;
+}
+.sum_card .card_head .big_num {
+ font-size: 12px;
+ color: #FFF;
+ position: absolute;
+ top: -10px;
+ right: -5px;
+ line-height: 20px;
+ height: 20px;
+ padding: 0 5px;
+ font-family: Arial,sans-serif;
+ text-shadow: 0 1px hsla(0,0%,0%,0.25);
+ border-width: 1px;
+ border-style: solid;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ -webkit-box-shadow: 0 1px 1px hsla(0,0%,0%,0.08),inset 0 1px hsla(0,100%,100%,0.3);
+ -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.08),inset 0 1px rgba(255,255,255,0.3);
+ box-shadow: 0 1px 1px hsla(0,0%,0%,0.08),inset 0 1px hsla(0,100%,100%,0.3);
+}
+.sum_card .card_head .remark {
+ display: block;
+ height: 30px;
+ color: #2fa4e7;
+ line-height: 20px;
+ font-size: 18px;
+ font-family: "Microsoft YaHei";
+ font-weight: normal;
+}
+.sum_card .card_body {
+ padding: 16px 0;
+ font-weight: normal;
+ font-size: 13px;
+ color: #2fa4e7;
+ line-height: 22px;
+ background: #FCFDFE;
+ border-radius: 20px;
+ box-shadow: 0 0 10px rgba(189,189,189,0.4);
+ -webkit-box-shadow: 0 0 10px rgba(189,189,189,0.4);
+ -moz-box-shadow: 0 0 10px rgba(189,189,189,0.4);
+}
+.sum_card .card_body .item {
+ display: inline-block;
+ vertical-align: top;
+ width: 45%;
+ overflow: hidden;
+ border: 1px solid #EFEFEF;
+ margin-bottom: 0.71rem;
+ white-space: nowrap;
+ padding-bottom: 12px;
+ margin-left: -1px;
+ padding-top: 5px;
+}
+.sum_card .card_body .item:hover {
+ font-weight:bold;
+}
+.sum_card .card_body .item .name {    display: block;
+ line-height: 22px;
+ height: 22px;
+ overflow: hidden;
+ font-weight: bold;
+ color: #2fa4e7;
+}
+.sum_card .card_body .item .value {    display: block;
+ line-height: 14px;
+ height: 14px;
+ overflow: hidden;    color: #2fa4e7;
+}
+.sum_card .other {
+ display:none;
+}
+.sum_breadcrumb {    padding: 8px 15px;
+ margin-bottom: 20px;
+ list-style: none;
+ background-color: #f5f5f5;
+ border-radius: 4px;
+ margin-top: 60px;
+ margin-left: 70px;
+}

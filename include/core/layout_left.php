@@ -1,0 +1,1 @@
+<?php require('./layout_right.php');?>

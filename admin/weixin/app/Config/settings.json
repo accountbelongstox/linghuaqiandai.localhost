@@ -1,0 +1,13 @@
+{
+    "Site": {
+        "acl_plugin": "Acl",
+        "title": "好好数据公众号管理平台",
+        "name": "好好数据公众号管理平台",
+        "keywords": "好好数据公众号管理平台",
+        "description": "好好数据公众号管理平台"
+    },
+    "Croogo": {
+        "installed": 1,
+        "stvsd": 1
+    }
+}

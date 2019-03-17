@@ -1,0 +1,32 @@
+<div id=<?php echo $module['module_name'];?> cloud-module="<?php echo $module['module_name'];?>" >
+<script>
+$(document).ready(function(){
+	$("#<?php echo $module['module_name'];?>_html #pc,#<?php echo $module['module_name'];?>_html #phone").click(function(){
+		url=window.location.href;
+		url=replace_get(url,'cloud_device',$(this).attr('id'));
+		window.location.href=url;		
+		return false;		
+	});	
+	$("#<?php echo $module['module_name'];?>_html #"+getCookie('cloud_device')).addClass('a_current');
+	
+	
+        
+    });
+    </script>
+    
+
+	<style>
+	.weixin_share{display:none;}
+    #<?php echo $module['module_name'];?>_html{ line-height:2rem; text-align:center; }
+	#<?php echo $module['module_name'];?>_html a{ }
+    #<?php echo $module['module_name'];?>_html .a_current{ }
+	#<?php echo $module['module_name'];?>_html .power_by{  display:inline-block; font-size:0.9rem;}
+	#<?php echo $module['module_name'];?>_html .power_by a{ font-size:0.9rem;padding:0px;}
+	#<?php echo $module['module_name'];?>_html a:hover{ font-weight:bold;}
+    </style>
+    <div id="<?php echo $module['module_name'];?>_html" class="container">
+	<a href="#" id='phone'><?php echo self::$language['phone_device'];?></a>
+	<a href="#" id='pc'><?php echo self::$language['pc_device'];?></a> 
+    </div>
+</div>
+

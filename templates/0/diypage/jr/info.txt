@@ -1,0 +1,7 @@
+name=默认
+type=0
+version=3.0
+dir=default
+for=diypage
+author=cloud
+author_url=http://www.ddweb.com.cn

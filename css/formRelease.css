@@ -1,0 +1,247 @@
+.formBuilder_step {
+    height: 50px;
+    padding: 0 10%;
+    background: #E4EAEB;
+    border-bottom: 1px solid #D0D0D0;
+    box-shadow: 0 1px 0 #FFF;
+}
+
+.formBuilder_title {
+    width: 18%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+    text-shadow: 0 1px 0 #FFF;
+    padding-left: 13px;
+    float: left;
+}
+
+.formBuilder_title span {
+    display: inline-block;
+    width: 30px;
+    color: #FFF;
+    margin-right: 10px;
+    background: url(../images/icon/formBuilderStepGray30x30.png) 0 center no-repeat;
+}
+
+.formBuilder_title_active {
+    color: #2776A4;
+}
+
+.formBuilder_title_active span {
+    background: url(../images/icon/formBuilderStepBlue30x30.png) 0 center no-repeat;
+}
+
+.formBuilder_line {
+    width: 20%;
+    height: 50px;
+    background: url(../images/icon/formBuilderStepLineGray.png) 0 center repeat-x;
+    float: left;
+}
+
+.form_interim {
+    height: 44px;
+    background: #F5F5F5;
+    border-bottom: 1px solid #D0D0D0;
+}
+
+.formBuilder_step3_content {
+    margin: 0 auto;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height:700px;
+    padding-bottom: 15px;
+}
+
+.shareForm_icon {
+    margin: 6px 0 6px 0;
+	color: #999;
+    width: 250px;
+    display: inline-block;
+}
+.shareFormSetting{
+    vertical-align: top;
+    margin-top: 7px;
+    color: #ffffff;
+}
+
+.formRelease_item {
+    width: 686px;
+    padding: 10px 20px 20px 20px;
+    margin-top: 15px;
+    border: 1px solid #D0D0D0;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px #EEE;
+    margin-left: auto;
+    margin-right: auto;
+	position: relative;
+}
+
+.formBuilder_step3_title {
+    color: #2776A4;
+    font-size: 16px;
+}
+.formBuilder_step3_tip {
+	font-size: 14px;
+}
+.formRelease_item p {
+    line-height: 30px;
+}
+.formViewExample_embed {
+	position: absolute;
+	right: 20px;
+	top: 25px;
+	height: 122px;
+	width: 103px;
+	background:#2776A4 url(../images/icon/formViewExample_embed.png) 0 0 no-repeat;
+}
+.formViewExample_fixed {
+	position: absolute;
+	right: 20px;
+	top: 25px;
+	height: 122px;
+	width: 103px;
+	background:#2776A4 url(../images/icon/formViewExample_fixed.png) 0 0 no-repeat;
+}
+
+.formBuilder_step3_textarea {
+    width: 460px;
+    height: 60px;
+	color: #777;
+	resize:none;
+}
+
+.formBuilder_step3_input {
+    width: 340px;
+	color: #777;
+}
+
+.btn_step3_copyURL, .btn_step3_view {
+    margin: 0 0 3px 10px;
+}
+
+.form_interim .btnBox {
+	width: 720px;
+	margin-left: auto;
+    margin-right: auto;
+	padding-top: 10px;
+}
+.form_interim .btnBox  a{
+	line-height: 17px;
+	padding: 4px 10px 4px 30px;
+	color: #333;
+}
+.form_interim .btnBox  a:hover{
+	color: #4491C4;
+}
+.form_interim .btnBox  a:active{
+	background-color: #DEEBF3;
+}
+
+.btn_step3_return {
+    float: left;
+	background: white url(../images/icon/editBlue.png) 10px center no-repeat;
+}
+.btn_step3_preview{
+    float: left;
+    margin-left: 20px;
+    background: white url(../images/icon/previewBlue.png) 10px center no-repeat;
+}
+.btn_step3_viewFormList {
+	float: right;
+	margin-left: 20px;
+	background: white url(../images/icon/formList.png) 10px center no-repeat;
+}
+.btn_toformFeedback {
+	display: none;
+    float: right;
+	background: white url(../images/icon/formFeedback.png) 10px center no-repeat;
+}
+
+.form_iframe {
+    padding: 3px;
+}
+
+.btn_step3_copyCode {
+    vertical-align: top;
+	margin-left: 10px;
+}
+
+.shareForm_icon p {
+    float: left;
+    line-height: 28px;
+    color: #000;
+}
+
+.jiathis_style_24x24 .jiathis_button_tsina .jtico_tsina {
+    padding-left: 24px !important;
+    margin-right: 5px;
+    background: url(../images/icon/shareIcon_s.png) no-repeat 0 0;
+}
+
+.jiathis_style_24x24 .jiathis_button_douban .jtico_douban {
+    padding-left: 24px !important;
+    margin-right: 5px;
+    background: url(../images/icon/shareIcon_s.png) no-repeat -48px 0;
+}
+
+.jiathis_style_24x24 .jiathis_button_cqq .jtico_cqq {
+    padding-left: 24px !important;
+    margin-right: 5px;
+    background: url(../images/icon/shareIcon_s.png) no-repeat -72px 0;
+}
+
+.jiathis_style_24x24 .jiathis_button_renren .jtico_renren {
+    padding-left: 24px !important;
+    margin-right: 5px;
+    background: url(../images/icon/shareIcon_s.png) no-repeat -96px 0;
+}
+
+.jiathis_style_24x24 .jiathis_button_mingdao .jtico_mingdao {
+    padding-left: 24px !important;
+    margin-right: 5px;
+    background: url(../images/icon/shareIcon_s.png) no-repeat -120px 0;
+}
+.jiathis_style_24x24 .jiathis_button_weixin .jtico_weixin {
+    padding-left: 24px !important;
+    margin-right: 0;
+    background: url(../images/icon/shareIcon_s.png) no-repeat -24px 0;
+}
+
+/*遮罩层*/
+#cover{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #000;
+	opacity: 0.4; /* Standards Compliant Browsers */
+  	filter: alpha(opacity=50); /* IE 7 and Earlier */
+	/* Next 2 lines IE8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+	z-index: 400;
+}
+
+.guide_print{
+	position: absolute;
+	top: 510px;
+	left: 570px;
+	width: 533px;
+	height: 124px;
+	background: url(../images/guide/formPrint.png) no-repeat;
+	z-index: 450;
+}
+.guide_print .printBtn{
+	position: absolute;
+	top: 79px;
+	left: 51px;
+	width: 70px;
+	height: 28px;
+	background: url(../images/guide/formPrint_btn.png) 0 0 no-repeat;
+}

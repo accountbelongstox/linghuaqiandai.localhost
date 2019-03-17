@@ -1,0 +1,305 @@
+<style>
+.page-footer{ 
+	background:#fff !important; 
+	color:#999 !important; 
+	clear:both;
+}
+.page-footer a{
+	color:#999 !important;
+}
+#<?php echo $module['module_name'];?>{  
+	line-height:2.5rem; 
+	width:100%; 
+	font-size: 16px;
+    font-family: "Microsoft YaHei";
+    background: #F1F1F1;
+    color: #676a6c;
+}
+#<?php echo $module['module_name'];?>_html .form_div{     
+	width: 400px;
+    margin: 3rem;
+    text-align: left;
+    overflow: hidden;
+    text-align: left;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body{ 
+	padding:1rem 1rem 0 1rem;
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body #login_logo_div{ 
+    text-align: center;
+}
+#login_logo_div h1 {
+    color: #e6e6e6;
+    font-size: 140px;
+    letter-spacing: -100px;
+    margin-bottom: 0px;
+}
+#login_logo_div p{
+	padding-left: 100px;
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body #login_logo_div img{ 
+	width:100%;
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body #input_div{
+	margin-left:1rem;
+	margin-right:1rem;
+	border:#CCC 1px solid;
+	text-align:left;
+	padding:1rem;
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body  input{  
+	width:100%;
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body  input:focus{
+	
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body #input_div .username_div{
+	border-bottom:#CCC 1px solid;
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body #input_div .username_div:before{
+	margin-right:8px;
+	font: normal normal normal 1rem/1 'FontAwesome'; 
+	content:'\f007';
+	border-radius:50%;
+	display:inline-block;
+	width:2rem;
+	height:2rem;
+	line-height:2rem;
+	text-align:center;
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body #input_div .password_div{
+	
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body #input_div .password_div:before{
+	margin-right:8px;
+	font: normal normal normal 1rem/1 FontAwesome;
+	content:"\f023";
+	border-radius:50%;
+	display:inline-block;
+	width:2rem;
+	height:2rem;
+	line-height:2rem;
+	text-align:center;
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body #authCode_Div{
+	text-align:left;
+	margin-left:1rem;
+	margin-right:1rem;
+	margin-top:1rem;
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body #authCode_Div #authcode_div{
+	border:1px #CCCCCC solid;
+	padding-left:1rem; 
+	display:inline-block; 
+	vertical-align:top; 
+	width:50%;
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body #authCode_Div #authcode_div input{
+	width:60%;
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body #authCode_Div #authcode_div:before{
+	margin-right:8px; 
+	font: normal normal normal 1rem/1 FontAwesome; 
+	content:'\f007';   
+	border-radius:50%;  
+	display:inline-block; 
+	width:2rem; 
+	height:2rem; 
+	line-height:2rem; 
+	text-align:center;
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body #authCode_Div .authcode_img_a{
+	display:inline-block;
+	padding-left:1rem;
+	vertical-align:top;
+	width:40%;
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body #authCode_Div .authcode_img_a img{
+	height:3rem;
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body #get_password{ 
+	display:block; 
+	text-align:left; 
+	padding-left:1rem; 
+	text-align:center;
+}
+#<?php echo $module['module_name'];?>_html .form_div  #reg_button_true{
+	display:block;   
+	font-weight:bold; 
+	line-height:4rem; 
+	text-align:center;  
+	margin-bottom:1rem; 
+}
+#<?php echo $module['module_name'];?>_html .form_div  #reg_button_true #submit{    
+	display: block;
+    width: 70%;
+    float: right;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    color: #ffffff !important;
+    background-color: #7266ba;
+    border-color: #7266ba;
+    height: 30px;
+    line-height: 30px;
+}
+#<?php echo $module['module_name'];?>_html .form_div  #reg_button_true #submit:before{
+	font: normal normal normal 1rem/1 FontAwesome; 
+	content:"\f046"; 
+	padding-right:3px; 
+	display:none;
+}
+#<?php echo $module['module_name'];?>_html .form_div #reg_button_true #submit:hover{
+	
+}
+#<?php echo $module['module_name'];?>_html #submit_state{ }
+#<?php echo $module['module_name'];?>_html .line{ 
+	text-align:left;
+    line-height: 30px;
+    height: 30px;
+    margin:0 0 15px 0;
+    font-size: 13px;
+}
+#<?php echo $module['module_name'];?>_html .line .m_label{ 
+	display:inline-block; 
+	vertical-align:top; 
+	width:30%; text-align:right; 
+	overflow:hidden;
+    float: left;
+}
+#<?php echo $module['module_name'];?>_html .line .input_span{    
+	display: block;
+    vertical-align: top;
+    width: 70%;
+    white-space: nowrap;
+    float: left;
+    
+    font-size: 13px;
+    line-height: 30px;
+    height: 30px;
+}
+#<?php echo $module['module_name'];?>_html .line .input_span input,#<?php echo $module['module_name'];?>_html .line .input_span a{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.get_verification_code{
+	font-size:1rem; 
+	display:inline-block; 
+	width:102px;
+	text-align:left;
+}
+.get_verification_code img{
+	vertical-align:middle;
+}
+.title_div{    
+	line-height: 1;
+    width: 85%;
+    margin: 10px 0;
+    padding: 0 0 0 30%;
+}
+.title_div span{
+    display: inline-block;
+    vertical-align: top;
+    float:left;
+    font-weight: normal;
+    overflow: hidden;
+    border-right: 1px solid #8d9095;
+    font-size: 14px;
+    color:#818181;
+}
+.title_div span.active{
+	color:#000;
+	font-weight: bold;
+}
+.title_div a{   
+	 display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 14px;
+    overflow: hidden;
+    color: #009ee7;
+    color: #337ab7;
+}
+.title_div a:hover{
+	opacity:0.8;
+}
+.agreement_div{
+	color:<?php echo $_POST['cloud_user_color_set']['nv_1']['background']?>;
+}
+.agreement_div a{
+	color:<?php echo $_POST['cloud_user_color_set']['nv_1']['background']?>;
+}
+#<?php echo $module['module_name'];?>_html .line .agreement{ width:1rem !important;}
+
+/*移动版*/
+@media (max-width:600px){
+#<?php echo $module['module_name'];?>_html .form_div .f_body #login_logo_div{ 
+	display:block;
+}
+#<?php echo $module['module_name'];?>_html .form_div{ 
+	width:100%; 
+	margin:0; 
+	float:right; text-align:left; 
+	border-radius:0; 
+	overflow:hidden; }
+#<?php echo $module['module_name'];?>{  
+    line-height:2.5rem; 
+    width:100%; 
+    font-size:15px; 
+    font-family: "Microsoft YaHei"; 
+    text-align:right;
+    }
+    input[type=text],input[type=password]{
+        height: 30px;
+        line-height: 30px;
+    }
+#<?php echo $module['module_name'];?>_html .form_div .f_body{
+	padding:5px;
+}
+#<?php echo $module['module_name'];?>_html .form_div .f_body input{
+	    border-radius: 1rem;  
+}
+#<?php echo $module['module_name'];?>_html .line .input_span{
+    width:60%;
+}
+.title_div{
+	width: 100%;
+     }
+
+.get_verification_code{font-size:13px; }
+     #cloud_form{
+     	margin-top:20px;
+     }
+}
+.title_div span.active{
+	font-weight: bold;
+    color: #59CDC7;
+}
+
+input {
+    border: 1px solid #ccc;
+    outline-width: 0px;
+    text-indent: 5px;
+    line-height: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border-radius: 1rem;
+}
+#<?php echo $module['module_name'];?>_html select{
+	border-radius: 5px;
+    border: 1px solid #ccc;
+    line-height: 30px;
+    height: 30px;
+    width: 100%;
+    display: block;
+    max-width:100%;
+}
+.page-footer{
+	display: none;
+}
+</style>

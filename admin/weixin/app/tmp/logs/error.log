@@ -1,0 +1,499 @@
+2017-03-21 01:23:33 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #15 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'cakewx.WxDataTwEvent.FMaxPersonCount' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+Request URL: /admin/weixin/admin/wc/008cde5ea9b2b4bc317377979c3e8929/mPic?_a=edit&_id=58d00b68-7444-45fb-b007-30144d223f93
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `WxDataT...', Array)
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `WxDataT...', Array, Array)
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `WxDataT...', Array)
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(2902): DboSource->read(Object(WxDataTw), Array)
+#5 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 D:\www_root\haohaodata\admin\weixin\app\Model\WxDataTw.php(145): Model->find('first', Array)
+#7 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(536): WxDataTw->getDataList('008cde5ea9b2b4b...', '58d00b68-7444-4...')
+#8 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(85): AdminController->_mPic('008cde5ea9b2b4b...', Array, '58d0043c-dd88-4...')
+#9 [internal function]: AdminController->wc('008cde5ea9b2b4b...', 'mPic')
+#10 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#11 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#13 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-03-21 04:12:43 Error: [MissingControllerException] Controller class window.location.href='Controller could not be found.
+Exception Attributes: array (
+  'class' => 'window.location.href=\'Controller',
+  'plugin' => NULL,
+)
+Request URL: /admin/weixin/window.location.href='/admin/weixin/admin/webchatEdit/58d0169e-05c4-40a5-b45c-12604d223f93'
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-03-21 05:05:23 Error: [MissingHelperException] Helper class FWxopenIdHelper could not be found.
+Exception Attributes: array (
+  'class' => 'FWxopenIdHelper',
+  'plugin' => false,
+)
+Request URL: /admin/weixin/admin/wc/273635a985696b0c7b32310bfa220eb4/bCtg
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('FWxopenId')
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(824): HelperCollection->__isset('FWxopenId')
+#2 D:\www_root\haohaodata\admin\weixin\app\View\Elements\Admin\sidebar.ctp(93): View->__get('FWxopenId')
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(935): include('D:\\www_root\\hao...')
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(897): View->_evaluate('D:\\www_root\\hao...', Array)
+#5 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(1195): View->_render('D:\\www_root\\hao...', Array)
+#6 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(412): View->_renderElement('D:\\www_root\\hao...', Array, Array)
+#7 D:\www_root\haohaodata\admin\weixin\app\View\Common\Admin\index.ctp(53): View->element('Admin/sidebar')
+#8 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(935): include('D:\\www_root\\hao...')
+#9 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(897): View->_evaluate('D:\\www_root\\hao...', Array)
+#10 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(909): View->_render('D:\\www_root\\hao...')
+#11 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(466): View->_render('D:\\www_root\\hao...')
+#12 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(952): View->render('/Admin/bCtg', NULL)
+#13 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(234): Controller->render('/Admin/bCtg')
+#14 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(100): AdminController->_bCtg('273635a985696b0...', Array, '58d01530-c5ac-4...')
+#15 [internal function]: AdminController->wc('273635a985696b0...', 'bCtg')
+#16 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#17 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#18 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#19 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2017-03-21 05:06:12 Error: [MissingHelperException] Helper class _activeHelper could not be found.
+Exception Attributes: array (
+  'class' => '_activeHelper',
+  'plugin' => false,
+)
+Request URL: /admin/weixin/admin/wc/273635a985696b0c7b32310bfa220eb4/bCtg
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('_active')
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(824): HelperCollection->__isset('_active')
+#2 D:\www_root\haohaodata\admin\weixin\app\View\Elements\Admin\sidebar.ctp(93): View->__get('_active')
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(935): include('D:\\www_root\\hao...')
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(897): View->_evaluate('D:\\www_root\\hao...', Array)
+#5 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(1195): View->_render('D:\\www_root\\hao...', Array)
+#6 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(412): View->_renderElement('D:\\www_root\\hao...', Array, Array)
+#7 D:\www_root\haohaodata\admin\weixin\app\View\Common\Admin\index.ctp(53): View->element('Admin/sidebar')
+#8 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(935): include('D:\\www_root\\hao...')
+#9 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(897): View->_evaluate('D:\\www_root\\hao...', Array)
+#10 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(909): View->_render('D:\\www_root\\hao...')
+#11 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(466): View->_render('D:\\www_root\\hao...')
+#12 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(952): View->render('/Admin/bCtg', NULL)
+#13 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(234): Controller->render('/Admin/bCtg')
+#14 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(100): AdminController->_bCtg('273635a985696b0...', Array, '58d01530-c5ac-4...')
+#15 [internal function]: AdminController->wc('273635a985696b0...', 'bCtg')
+#16 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#17 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#18 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#19 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2017-03-21 05:07:20 Error: [MissingHelperException] Helper class fieldsetHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fieldsetHelper',
+  'plugin' => false,
+)
+Request URL: /admin/weixin/admin/wc/273635a985696b0c7b32310bfa220eb4/bCtg
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('fieldset')
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(824): HelperCollection->__isset('fieldset')
+#2 D:\www_root\haohaodata\admin\weixin\app\View\Elements\Admin\sidebar.ctp(93): View->__get('fieldset')
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(935): include('D:\\www_root\\hao...')
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(897): View->_evaluate('D:\\www_root\\hao...', Array)
+#5 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(1195): View->_render('D:\\www_root\\hao...', Array)
+#6 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(412): View->_renderElement('D:\\www_root\\hao...', Array, Array)
+#7 D:\www_root\haohaodata\admin\weixin\app\View\Common\Admin\index.ctp(53): View->element('Admin/sidebar')
+#8 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(935): include('D:\\www_root\\hao...')
+#9 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(897): View->_evaluate('D:\\www_root\\hao...', Array)
+#10 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(909): View->_render('D:\\www_root\\hao...')
+#11 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(466): View->_render('D:\\www_root\\hao...')
+#12 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(952): View->render('/Admin/bCtg', NULL)
+#13 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(234): Controller->render('/Admin/bCtg')
+#14 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(100): AdminController->_bCtg('273635a985696b0...', Array, '58d01530-c5ac-4...')
+#15 [internal function]: AdminController->wc('273635a985696b0...', 'bCtg')
+#16 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#17 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#18 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#19 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2017-03-21 05:07:43 Error: [MissingHelperException] Helper class fieldsetHelper could not be found.
+Exception Attributes: array (
+  'class' => 'fieldsetHelper',
+  'plugin' => false,
+)
+Request URL: /admin/weixin/admin/wc/273635a985696b0c7b32310bfa220eb4/bCtg
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('fieldset')
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(824): HelperCollection->__isset('fieldset')
+#2 D:\www_root\haohaodata\admin\weixin\app\View\Elements\Admin\sidebar.ctp(93): View->__get('fieldset')
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(935): include('D:\\www_root\\hao...')
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(897): View->_evaluate('D:\\www_root\\hao...', Array)
+#5 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(1195): View->_render('D:\\www_root\\hao...', Array)
+#6 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(412): View->_renderElement('D:\\www_root\\hao...', Array, Array)
+#7 D:\www_root\haohaodata\admin\weixin\app\View\Common\Admin\index.ctp(53): View->element('Admin/sidebar')
+#8 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(935): include('D:\\www_root\\hao...')
+#9 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(897): View->_evaluate('D:\\www_root\\hao...', Array)
+#10 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(909): View->_render('D:\\www_root\\hao...')
+#11 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(466): View->_render('D:\\www_root\\hao...')
+#12 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(952): View->render('/Admin/bCtg', NULL)
+#13 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(234): Controller->render('/Admin/bCtg')
+#14 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(100): AdminController->_bCtg('273635a985696b0...', Array, '58d01530-c5ac-4...')
+#15 [internal function]: AdminController->wc('273635a985696b0...', 'bCtg')
+#16 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#17 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#18 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#19 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2017-03-21 05:08:36 Error: [MissingHelperException] Helper class uidHelper could not be found.
+Exception Attributes: array (
+  'class' => 'uidHelper',
+  'plugin' => false,
+)
+Request URL: /admin/weixin/admin/wc/273635a985696b0c7b32310bfa220eb4/bCtg
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('uid')
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(824): HelperCollection->__isset('uid')
+#2 D:\www_root\haohaodata\admin\weixin\app\View\Elements\Admin\sidebar.ctp(93): View->__get('uid')
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(935): include('D:\\www_root\\hao...')
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(897): View->_evaluate('D:\\www_root\\hao...', Array)
+#5 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(1195): View->_render('D:\\www_root\\hao...', Array)
+#6 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(412): View->_renderElement('D:\\www_root\\hao...', Array, Array)
+#7 D:\www_root\haohaodata\admin\weixin\app\View\Common\Admin\index.ctp(53): View->element('Admin/sidebar')
+#8 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(935): include('D:\\www_root\\hao...')
+#9 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(897): View->_evaluate('D:\\www_root\\hao...', Array)
+#10 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(909): View->_render('D:\\www_root\\hao...')
+#11 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(466): View->_render('D:\\www_root\\hao...')
+#12 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(952): View->render('/Admin/bCtg', NULL)
+#13 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(234): Controller->render('/Admin/bCtg')
+#14 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(100): AdminController->_bCtg('273635a985696b0...', Array, '58d01530-c5ac-4...')
+#15 [internal function]: AdminController->wc('273635a985696b0...', 'bCtg')
+#16 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#17 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#18 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#19 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2017-03-21 05:09:14 Error: [MissingHelperException] Helper class FIsAdminHelper could not be found.
+Exception Attributes: array (
+  'class' => 'FIsAdminHelper',
+  'plugin' => false,
+)
+Request URL: /admin/weixin/admin/wc/273635a985696b0c7b32310bfa220eb4/bCtg
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('FIsAdmin')
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(824): HelperCollection->__isset('FIsAdmin')
+#2 D:\www_root\haohaodata\admin\weixin\app\View\Elements\Admin\sidebar.ctp(93): View->__get('FIsAdmin')
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(935): include('D:\\www_root\\hao...')
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(897): View->_evaluate('D:\\www_root\\hao...', Array)
+#5 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(1195): View->_render('D:\\www_root\\hao...', Array)
+#6 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(412): View->_renderElement('D:\\www_root\\hao...', Array, Array)
+#7 D:\www_root\haohaodata\admin\weixin\app\View\Common\Admin\index.ctp(53): View->element('Admin/sidebar')
+#8 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(935): include('D:\\www_root\\hao...')
+#9 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(897): View->_evaluate('D:\\www_root\\hao...', Array)
+#10 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(909): View->_render('D:\\www_root\\hao...')
+#11 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(466): View->_render('D:\\www_root\\hao...')
+#12 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(952): View->render('/Admin/bCtg', NULL)
+#13 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(234): Controller->render('/Admin/bCtg')
+#14 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(100): AdminController->_bCtg('273635a985696b0...', Array, '58d01530-c5ac-4...')
+#15 [internal function]: AdminController->wc('273635a985696b0...', 'bCtg')
+#16 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#17 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#18 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#19 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2017-03-21 06:19:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'FWebchat' in 'where clause'
+Request URL: /admin/weixin/admin/wc/db045440dac82671909e553033c200db/mPic
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `WxWebch...', Array)
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `WxWebch...', Array, Array)
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT `WxWebch...', Array)
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(2902): DboSource->read(Object(WxWebchat), Array)
+#5 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(755): PaginatorComponent->paginate(Object(WxWebchat), Array)
+#8 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(96): AdminController->_mPic('db045440dac8267...', Array, '58d003fc-82b4-4...')
+#9 [internal function]: AdminController->wc('db045440dac8267...', 'mPic')
+#10 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#11 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#13 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-03-21 06:19:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'FWebchat' in 'where clause'
+Request URL: /admin/weixin/admin/wc/db045440dac82671909e553033c200db/mPic
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `WxWebch...', Array)
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `WxWebch...', Array, Array)
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT `WxWebch...', Array)
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(2902): DboSource->read(Object(WxWebchat), Array)
+#5 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(755): PaginatorComponent->paginate(Object(WxWebchat), Array)
+#8 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(96): AdminController->_mPic('db045440dac8267...', Array, '58d003fc-82b4-4...')
+#9 [internal function]: AdminController->wc('db045440dac8267...', 'mPic')
+#10 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#11 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#13 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-03-21 06:19:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'FWebchat' in 'where clause'
+Request URL: /admin/weixin/admin/wc/db045440dac82671909e553033c200db/mPic
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `WxWebch...', Array)
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `WxWebch...', Array, Array)
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Datasource\DboSource.php(1078): DboSource->fetchAll('SELECT `WxWebch...', Array)
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(2902): DboSource->read(Object(WxWebchat), Array)
+#5 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(755): PaginatorComponent->paginate(Object(WxWebchat), Array)
+#8 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(96): AdminController->_mPic('db045440dac8267...', Array, '58d003fc-82b4-4...')
+#9 [internal function]: AdminController->wc('db045440dac8267...', 'mPic')
+#10 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#11 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#13 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2017-03-21 06:51:06 Error: [MissingHelperException] Helper class WC_dataHelper could not be found.
+Exception Attributes: array (
+  'class' => 'WC_dataHelper',
+  'plugin' => false,
+)
+Request URL: /admin/weixin/admin/wc/cd5775dd8313c92be652a4861e87852c/bFllow
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('WC_data')
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(824): HelperCollection->__isset('WC_data')
+#2 D:\www_root\haohaodata\admin\weixin\app\View\Elements\Admin\sidebar.ctp(89): View->__get('WC_data')
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(935): include('D:\\www_root\\hao...')
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(897): View->_evaluate('D:\\www_root\\hao...', Array)
+#5 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(1195): View->_render('D:\\www_root\\hao...', Array)
+#6 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(412): View->_renderElement('D:\\www_root\\hao...', Array, Array)
+#7 D:\www_root\haohaodata\admin\weixin\app\View\Common\Admin\index.ctp(53): View->element('Admin/sidebar')
+#8 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(935): include('D:\\www_root\\hao...')
+#9 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(897): View->_evaluate('D:\\www_root\\hao...', Array)
+#10 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(909): View->_render('D:\\www_root\\hao...')
+#11 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(466): View->_render('D:\\www_root\\hao...')
+#12 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(952): View->render('/Admin/bFllow', NULL)
+#13 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(293): Controller->render('/Admin/bFllow')
+#14 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(101): AdminController->_bFllow('cd5775dd8313c92...', Array, '58d003f3-a254-4...')
+#15 [internal function]: AdminController->wc('cd5775dd8313c92...', 'bFllow')
+#16 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#17 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#18 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#19 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2017-03-21 07:15:39 Error: [NotFoundException] Not Found
+Request URL: /admin/weixin/admin/index/page:2/sort:WxWebchat.FCreatedate/direction:desc
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(115): PaginatorComponent->paginate(Object(WxWebchat), Array)
+#1 [internal function]: AdminController->index()
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-03-21 07:15:45 Error: [NotFoundException] Not Found
+Request URL: /admin/weixin/admin/index/page:2/sort:WxWebchat.FCreatedate/direction:desc
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(115): PaginatorComponent->paginate(Object(WxWebchat), Array)
+#1 [internal function]: AdminController->index()
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-03-21 07:15:49 Error: [NotFoundException] Not Found
+Request URL: /admin/weixin/admin/index/page:2/sort:WxWebchat.FCreatedate/direction:desc
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(115): PaginatorComponent->paginate(Object(WxWebchat), Array)
+#1 [internal function]: AdminController->index()
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-03-21 07:16:23 Error: [NotFoundException] Not Found
+Request URL: /admin/weixin/admin/index/page:2/sort:WxWebchat.FCreatedate/direction:desc
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(115): PaginatorComponent->paginate(Object(WxWebchat), Array)
+#1 [internal function]: AdminController->index()
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-03-21 07:16:29 Error: [NotFoundException] Not Found
+Request URL: /admin/weixin/admin/index/page:2/sort:WxWebchat.FCreatedate/direction:desc
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(115): PaginatorComponent->paginate(Object(WxWebchat), Array)
+#1 [internal function]: AdminController->index()
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-03-21 07:16:31 Error: [NotFoundException] Not Found
+Request URL: /admin/weixin/admin/index/page:2/sort:WxWebchat.FCreatedate/direction:desc
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(115): PaginatorComponent->paginate(Object(WxWebchat), Array)
+#1 [internal function]: AdminController->index()
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-03-21 07:16:32 Error: [NotFoundException] Not Found
+Request URL: /admin/weixin/admin/index/page:2/sort:WxWebchat.FCreatedate/direction:desc
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(115): PaginatorComponent->paginate(Object(WxWebchat), Array)
+#1 [internal function]: AdminController->index()
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-03-21 07:16:37 Error: [NotFoundException] Not Found
+Request URL: /admin/weixin/admin/index/page:2/sort:WxWebchat.FCreatedate/direction:desc
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(115): PaginatorComponent->paginate(Object(WxWebchat), Array)
+#1 [internal function]: AdminController->index()
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-03-21 07:17:07 Error: [NotFoundException] Not Found
+Request URL: /admin/weixin/admin/index/page:2/sort:WxWebchat.FCreatedate/direction:desc
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(115): PaginatorComponent->paginate(Object(WxWebchat), Array)
+#1 [internal function]: AdminController->index()
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#5 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2017-03-21 07:33:47 Error: [MissingViewException] View file "D:\www_root\haohaodata\admin\weixin\app\View\Admin\wc.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'D:\\www_root\\haohaodata\\admin\\weixin\\app\\View\\Admin\\wc.ctp',
+)
+Request URL: /admin/weixin/admin/wc/cd5775dd8313c92be652a4861e87852c/mPic
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(463): View->_getViewFileName('Admin\\wc')
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-03-21 07:33:47 Error: [MissingViewException] View file "D:\www_root\haohaodata\admin\weixin\app\View\Admin\wc.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'D:\\www_root\\haohaodata\\admin\\weixin\\app\\View\\Admin\\wc.ctp',
+)
+Request URL: /admin/weixin/admin/wc/cd5775dd8313c92be652a4861e87852c/mPic
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(463): View->_getViewFileName('Admin\\wc')
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-03-21 07:33:48 Error: [MissingViewException] View file "D:\www_root\haohaodata\admin\weixin\app\View\Admin\wc.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'D:\\www_root\\haohaodata\\admin\\weixin\\app\\View\\Admin\\wc.ctp',
+)
+Request URL: /admin/weixin/admin/wc/cd5775dd8313c92be652a4861e87852c/mPic
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(463): View->_getViewFileName('Admin\\wc')
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-03-21 07:57:11 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /admin/weixin/admin
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\ConnectionManager.php(91): ConnectionManager::_getConnectionObject('default')
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(3476): ConnectionManager::getDataSource('default')
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(3498): Model->setSource('webchat')
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(2902): Model->getDataSource()
+#5 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(115): PaginatorComponent->paginate(Object(WxWebchat), Array)
+#8 [internal function]: AdminController->index()
+#9 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#10 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-03-21 07:57:12 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /admin/weixin/admin
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\ConnectionManager.php(91): ConnectionManager::_getConnectionObject('default')
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(3476): ConnectionManager::getDataSource('default')
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(3498): Model->setSource('webchat')
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(2902): Model->getDataSource()
+#5 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(115): PaginatorComponent->paginate(Object(WxWebchat), Array)
+#8 [internal function]: AdminController->index()
+#9 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#10 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-03-21 07:57:12 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /admin/weixin/admin
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\ConnectionManager.php(91): ConnectionManager::_getConnectionObject('default')
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(3476): ConnectionManager::getDataSource('default')
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(3498): Model->setSource('webchat')
+#4 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(2902): Model->getDataSource()
+#5 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 D:\www_root\haohaodata\admin\weixin\app\Controller\AdminController.php(115): PaginatorComponent->paginate(Object(WxWebchat), Array)
+#8 [internal function]: AdminController->index()
+#9 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminController), Array)
+#10 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#12 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-03-21 11:05:36 Error: [MissingViewException] View file "D:\www_root\haohaodata\admin\weixin\app\View\User\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'D:\\www_root\\haohaodata\\admin\\weixin\\app\\View\\User\\login.ctp',
+)
+Request URL: /admin/weixin/?key=KeyHaohaodata2017&TPersonFMemberId=admin&TPersonFPassWord=3fb397fa6c44f0ea5feca1f9608d2423
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(463): View->_getViewFileName('User\\login')
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(952): View->render(NULL, NULL)
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(192): Controller->render()
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UserController), Object(CakeRequest), Object(CakeResponse))
+#4 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-07-10 02:19:10 Error: [MissingTableException] Table cx_tperson for model TPerson was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'cx_tperson',
+  'class' => 'TPerson',
+  'ds' => 'default',
+)
+Request URL: /admin/weixin/signup?key=KeyHaohaodata2017&TPersonFMemberId=admin&TPersonFPassWord=4e7dfebb7561bceb87058b9d31e08ff0&TPersonFullName=%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98&TPersonFMobileNumber=18074507509&TPersonFEMail=user%40linghuaqian.com&TPersonFCity=City
+Stack Trace:
+#0 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(3499): Model->setSource('tperson')
+#1 D:\www_root\haohaodata\admin\weixin\lib\Cake\Model\Model.php(1355): Model->getDataSource()
+#2 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\Helper\FormHelper.php(207): Model->schema()
+#3 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\Helper\FormHelper.php(459): FormHelper->_introspectModel('TPerson', 'fields')
+#4 D:\www_root\haohaodata\admin\weixin\app\View\Admin\User\register.ctp(40): FormHelper->create('TPerson', Array)
+#5 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(935): include('D:\\www_root\\hao...')
+#6 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(897): View->_evaluate('D:\\www_root\\hao...', Array)
+#7 D:\www_root\haohaodata\admin\weixin\lib\Cake\View\View.php(466): View->_render('D:\\www_root\\hao...')
+#8 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(952): View->render('/Admin/User/reg...', NULL)
+#9 D:\www_root\haohaodata\admin\weixin\app\Controller\UserController.php(78): Controller->render('/Admin/User/reg...')
+#10 [internal function]: UserController->register()
+#11 D:\www_root\haohaodata\admin\weixin\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#12 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 D:\www_root\haohaodata\admin\weixin\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UserController), Object(CakeRequest), Object(CakeResponse))
+#14 D:\www_root\haohaodata\admin\weixin\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}

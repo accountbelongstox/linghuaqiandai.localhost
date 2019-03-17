@@ -1,0 +1,3 @@
+<div style=&#34;text-align:center;&#34;>
+	<a href=&#34;index.php?cloud=feedback.list&#34;>留言反馈</a> <a href=&#34;index.php?cloud=index.login&#34; target=&#34;_blank&#34;>后台管理</a> 
+</div>

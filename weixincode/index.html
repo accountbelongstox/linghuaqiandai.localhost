@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Generator" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>微信生成带参数二维码</title>
+<script src="/public/jquery.js"></script>
+<body>
+场景ID:<input type="text" id="setId" name="setId" /><br/>
+微信 AppId:<input type="text" id="appId" name="appId" value="wx85bf31ed17b9d3bf" /><br/>
+微信 AppSecret :<input type="text" id="secret" name="secret" value="7619abfe86fdd0ca9950ee5f719faf22" /><br/>
+<a href="javascript:;" onclick="submit_ajax();" >提交</a><br />
+<div id="re">
+</div>
+</body>
+<script>
+	function submit_ajax(){
+		var appId=$("#appId").val();
+		var setId=$("#setId").val();
+		var secret=$("#secret").val();
+		if(appId == "" || secret == ""){
+			alert("请先填写值!再提交");
+			return false;
+		}
+		var o={
+			"appid":appId,
+			"setId":setId,
+			"secret":secret
+		}
+		$.get("./demo.php",o,function(data){
+			$("#re").html(data);
+			console.log(data);
+		})
+	}
+</script>
+</html>
